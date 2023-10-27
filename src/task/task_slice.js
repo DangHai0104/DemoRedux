@@ -12,7 +12,7 @@ export const taskSlice = createSlice({
 
         del: (state, action) => {
             state.list = state.list.filter(function (task){
-                return task != action.payload
+                return task !== action.payload
             })
         }
     }
